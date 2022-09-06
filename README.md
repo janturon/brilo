@@ -21,19 +21,19 @@ Edit **web/js/data.json** with dummy data.
 
 - **/css** styles deployed from *assets/scss*
 - **/js** scripts deployed from *assets/ts*
--- **/scripts.js** ad-hoc lean template system for testing without full-blown back-end
+- - **/scripts.js** ad-hoc lean template system for testing without full-blown back-end
 - **/img** static images
 - **/font** Montserrat Light Latin-Extended-A subset in woff format
 - **/pages** targets of link fetches
--- **/index.html** - the only one implemented (based on the design above), responsivity achieved by grid system mentioned below
--- **/mywork.html /about.html** - dummy pages to enable in-page links
+- - **/index.html** - the only one implemented (based on the design above), responsivity achieved by grid system mentioned below
+- - **/mywork.html /about.html** - dummy pages to enable in-page links
 
 ## CSS naming conventions
 
 - Most of the styles are based on BEM
 - There are some general styles (main container, button, css variables) in main.scss
 - Simplified grid system loosely inspired by Bootstrap in grid.scss
-- Rudimentary presenter (page-*.scss) and component (component-*.scss) styles suggested in two more files
+- Rudimentary presenter `page-*.scss` and component `component-*.scss` styles suggested in two more files
 
 ## Notes
 
