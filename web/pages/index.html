@@ -1,0 +1,31 @@
+<section class="flex-row block1">
+
+    <div class="cell-8 cell-sm-12 block1--perex">
+        <h1>Jan Turoň</h1>
+        <p>Sto roků v šachtě žil, mlčel jsem, sto roků kopal jsem uhlí, za sto let v rameni bezmasém svaly mi v železo ztuhly. Uhelný prach sed mi do očí, rubíny ze rtů mi uhly, ze vlasů, z vousů a z obočí visí mi rampouchy uhlí z krve mé a z mého potu. Sto roků v kopalně mlčel jsem, Kdo mi těch sto roků vrátí?</p>
+        <p><a class="button" rel="noopener" href="mywork">Více o mé práci</a></p>
+    </div>
+
+    <div class="cell-4 cell-sm-12 block1--image">
+        <img src="/img/profile.jpg" alt="Jan Turoň">
+    </div>
+
+</section>
+
+
+<h2 class="cell-padding">Mé dílo</h2>
+<section class="flex-row block2" data-foreach="projects" id="projects">
+    <div class="cell-4 cell-sm-12 card">
+        <div class="card--image">
+            <img data-src="/img/${image}" alt="${title}" title="${title}">
+        </div>
+        <div class="card--text">
+            <h3>${title}</h3>
+            <p>${perex}</p>
+        </div>
+    </div>
+</section>
+<script>
+    applyTemplate(ID.projects);
+    linksToFetch(ID.main);
+</script>

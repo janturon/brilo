@@ -1,0 +1,12 @@
+{
+    "menu": [
+        { "name": "Home", "link": "index" },
+        { "name": "About me", "link": "about" },
+        { "name": "My work", "link": "mywork" }
+    ],
+    "projects": [
+        { "image": "project1.jpg", "title": "Rubání v Ostravě", "perex": "Jak štajger pravi fajront, tak sa ta brenpartyja štosuje do putyky."},
+        { "image": "project2.jpg", "title": "Tesařina", "perex": "Inovace vývojovýchnástrojů ve firmě Microsoft" },
+        { "image": "project3.jpg", "title": "Dovolená v Karibiku", "perex": "Záznam ze soutěže nafukovacích zvířat" }
+    ]
+}

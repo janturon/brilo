@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brilo Task</title>
+<link rel="stylesheet" href="css/styles.css">
+
+<body id="body-index">
+
+    <nav id="main-menu">
+        <ul class="global--menu global--container" data-foreach="menu">
+            <li><a rel="noopener" href="${link}">${name}</a>
+        </ul>
+    </nav>
+
+    <main id="main" class="global--container">
+    </main>
+
+    <footer id="main-footer">
+        &copy; Brilo Task 2022
+    </footer>
+</body>
+
+<script src="js/scripts.js"></script>
+
+<script>
+const server = "js/data.json";
+fetch(server).then(r => r.json())
+    .then(r => window.DATA = r)
+    .then(loadData)
+    .then(_=>loadPage("index"));
+</script>

@@ -1,0 +1,24 @@
+#body-index {
+    .block1 {
+        margin: 5rem 0;
+    }
+    .block1--image img {
+        max-width: 320px;
+        max-height: 320px;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .block1--perex .button {
+        margin: 1rem 0;
+    }
+
+    @media (max-width: 720px) {
+        .block1--perex {
+            order: 2;
+        }
+        .block1--image {
+            text-align: center;
+        }
+    }
+}
